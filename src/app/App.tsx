@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type SVGProps } from "react";
 import {
   Mail,
   Linkedin,
   Github,
-  Instagram,
   Coffee,
   Palette,
   Gamepad2,
@@ -147,6 +146,15 @@ function SectionLabel({ text }: { text: string }) {
     <span className="inline-block text-xs font-semibold tracking-[0.18em] uppercase text-primary mb-3 px-3 py-1 bg-secondary rounded-full">
       {text}
     </span>
+  );
+}
+
+function DiscordIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M19.54 4.5a16.8 16.8 0 0 0-4.2-1.3c-.18.33-.4.77-.55 1.12a15.4 15.4 0 0 0-2.16.2 15.6 15.6 0 0 0-2.16-.2c-.15-.35-.37-.79-.55-1.12a16.8 16.8 0 0 0-4.2 1.3 16.7 16.7 0 0 0-2.4 7.9c0 3.66 2.1 7.06 5.3 7.89.08-.12.16-.24.24-.36a13 13 0 0 1-1.03-1.63c.56-.2 1.08-.45 1.58-.78a10.3 10.3 0 0 0 4.13 1.15 10.3 10.3 0 0 0 4.13-1.15c.5.33 1.02.58 1.58.78a13 13 0 0 1-1.03 1.63c.08.12.16.24.24.36 3.2-.83 5.3-4.23 5.3-7.89a16.7 16.7 0 0 0-2.4-7.9Z" />
+      <path d="M8.8 9.7c-.8 0-1.4.6-1.4 1.4 0 .8.6 1.4 1.4 1.4.8 0 1.4-.6 1.4-1.4 0-.8-.6-1.4-1.4-1.4Zm6.4 0c-.8 0-1.4.6-1.4 1.4 0 .8.6 1.4 1.4 1.4.8 0 1.4-.6 1.4-1.4 0-.8-.6-1.4-1.4-1.4Z" />
+    </svg>
   );
 }
 
@@ -606,14 +614,15 @@ export default function App() {
 
           <div className="flex items-center justify-center gap-5 flex-wrap mb-14">
             {[
-              { icon: Mail, label: "Email", href: "mailto:lucasnguyen090809@example.com" },
-              { icon: Linkedin, label: "LinkedIn", href: "#" },
-              { icon: Github, label: "GitHub", href: "#" },
-              { icon: Instagram, label: "Instagram", href: "#" },
+              { icon: Mail, label: "Email", href: "mailto:lucasnguyen090809@example.com" },              
+              { icon: Github, label: "GitHub", href: "https://github.com/Mute-dev09" },
+              { icon: DiscordIcon, label: "Discord", href: "https://discord.com/users/mute0540" },
             ].map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-3 rounded-xl font-medium text-sm transition-all duration-200 border border-white/10 hover:border-white/20"
               >
                 <Icon className="w-4 h-4" />
@@ -623,9 +632,9 @@ export default function App() {
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/40 text-xs max-w-[600px] mx-auto">
-            <span>© 2026 Lucas. Built with React & love.</span>
+            <span>© 2026 Lucas. Built with React & creativity.</span>
             <span className="flex items-center gap-1">
-              Powered by <Coffee className="w-3 h-3" /> and curiosity
+              Powered by anime, worldbuilding experience and curiosity.
             </span>
           </div>
         </div>
