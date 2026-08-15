@@ -1,3 +1,40 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* Hero diagonal game showcase — decorative layer, not layout */
+.hero-game-showcase {
+  width: clamp(180px, 28vw, 420px);
+  height: 100vh;
+  top: 0;
+}
+
+.hero-game-showcase__clip {
+  clip-path: polygon(0 0, 100% 0, 58% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.hero-game-showcase__image {
+  width: 130%;
+  max-width: none;
+  left: -15%;
+}
+
+.hero-game-showcase__overlay {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    rgba(0, 0, 0, 0.72) 100%
+  );
+}
+
+@media (max-width: 768px) {
+  .hero-game-showcase {
+    width: clamp(120px, 20vw, 220px);
+  }
+
+  .hero-game-showcase__clip {
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0 100%);
+  }
+}

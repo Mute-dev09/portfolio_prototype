@@ -1,4 +1,5 @@
 import { useState, useEffect, type SVGProps } from "react";
+import { HeroGameShowcase } from "./components/HeroGameShowcase";
 import {
   Mail,
   Linkedin,
@@ -230,13 +231,13 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <div className="min-h-screen overflow-x-hidden bg-background text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* ── NAV ── */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-card/90 backdrop-blur-sm border-b border-border shadow-sm" : ""}`}
       >
-        <div className="max-w-[1100px] mx-auto px-6 py-4 flex items-center justify-between gap-4">
-          <span className="font-bold text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <div className="max-w-[1100px] mx-auto grid grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-4">
+          <span className="justify-self-start font-bold text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
             <span className="text-primary">{"<"}</span>Lucas
             <span className="text-accent">.</span>
             <span className="text-primary">{"/>"}</span>
@@ -255,7 +256,7 @@ export default function App() {
           <button
             type="button"
             onClick={() => setIsDark((value) => !value)}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            className="inline-flex items-center gap-2 justify-self-end rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
           >
             {isDark ? 'Light Mode' : 'Dark Mode'}
           </button>
@@ -263,18 +264,20 @@ export default function App() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative flex min-h-screen items-center overflow-hidden">
+        <HeroGameShowcase />
+
         {/* decorative blobs */}
         <div
-          className="absolute top-20 right-[-80px] w-[420px] h-[420px] rounded-full opacity-20 blur-3xl pointer-events-none"
+          className="pointer-events-none absolute top-20 right-[-80px] z-[2] h-[420px] w-[420px] rounded-full opacity-20 blur-3xl"
           style={{ background: "radial-gradient(circle, #5B7FFF 0%, transparent 70%)" }}
         />
         <div
-          className="absolute bottom-10 left-[-60px] w-[300px] h-[300px] rounded-full opacity-15 blur-3xl pointer-events-none"
+          className="pointer-events-none absolute bottom-10 left-[-60px] z-[2] h-[300px] w-[300px] rounded-full opacity-15 blur-3xl"
           style={{ background: "radial-gradient(circle, #FFD166 0%, transparent 70%)" }}
         />
 
-        <div className="max-w-[1100px] mx-auto px-6 pt-28 pb-20 w-full">
+        <div className="relative z-10 mx-auto w-full max-w-[1100px] px-6 pb-20 pt-28">
           <p
             className="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-6"
             style={{ fontFamily: "'Poppins', sans-serif" }}
