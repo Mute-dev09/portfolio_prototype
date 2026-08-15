@@ -12,6 +12,6 @@ export const HERO_GAME_IMAGES: HeroGameImage[] = [
   { src: "/games/ready-or-not.svg", alt: "Ready Or Not" },
   { src: "/games/strategy.svg", alt: "Strategy games" },
   { src: "/games/tactical.svg", alt: "Tactical shooters" },
-  { src: "/games/AC6.png", alt: "Giant robot games" },
+  { src: "/games/AC6_2.png", alt: "Giant robot games" },
   { src: "/games/gacha.svg", alt: "Gacha games" },
 ];
