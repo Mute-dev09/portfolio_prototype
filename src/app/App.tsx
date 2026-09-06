@@ -1,5 +1,6 @@
 import { useState, useEffect, type SVGProps } from "react";
 import { HeroGameShowcase } from "./components/HeroGameShowcase";
+import { CertificationsGallery } from "./components/CertificationsGallery";
 import {
   Mail,
   Linkedin,
@@ -243,7 +244,7 @@ export default function App() {
             <span className="text-primary">{"/>"}</span>
           </span>
           <div className="hidden sm:flex items-center gap-6 text-sm font-medium text-muted-foreground">
-            {["About", "Journey", "Hobbies", "Goals", "Contact"].map((s) => (
+            {["About", "Credentials", "Journey", "Hobbies", "Goals", "Contact"].map((s) => (
               <a
                 key={s}
                 href={`#${s.toLowerCase()}`}
@@ -376,6 +377,8 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <CertificationsGallery isDark={isDark} />
 
       {/* ── TIMELINE ── */}
       <section id="journey" className="py-20 sm:py-24 bg-secondary/40">
