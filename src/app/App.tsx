@@ -26,13 +26,13 @@ const TIMELINE = [
   {
     date: "Grade 6",
     title: "Middle school begins",
-    desc: "Stepped into a new chapter — bigger school, harder subjects, and the first spark of curiosity about computers.",
+    desc: "Stepped into a new chapter. Bigger school, harder subjects, and the first spark of curiosity about computers.",
     tag: "school",
   },
   {
     date: "Grade 7",
     title: "Fell in love with English",
-    desc: "Discovered that English was more than a simple language — it was a doorway to books, games, and the internet.",
+    desc: "Discovered that English was more than a simple language, it was a doorway to books, games, and the internet.",
     tag: "language",
   },
   {
@@ -62,15 +62,10 @@ const TIMELINE = [
   {
     date: "Grade 11",
     title: "Started learning to code",
-    desc: "Picked up HTML, CSS, and JavaScript fundamentals. Built my first portfolio with my tutor — broken layout and all.",
+    desc: "Picked up HTML, CSS, and JavaScript fundamentals. Built my first portfolio with my tutor, actually went pretty well.",
     tag: "tech",
   },
-  {
-    date: "Grade 12",
-    title: "Got an IELTS band 7.0",
-    desc: "After months of preparation, I finally achieved my target IELTS score.",
-    tag: "achievement",
-  },
+  
 ];
 
 const HOBBIES = [
@@ -94,12 +89,12 @@ const GOALS = [
 ];
 
 const FACTS = [
-  "I play a lot of games and they usually cconsists of giant robots, military shooters and gacha games.",
+  "I play lots of games and they usually cconsists of giant robots, military shooters and gacha games.",
   "My favorite movies are Pacific Rim, Real Steel and Bayverse Transformers.",
   "My first line of code was a typo that took an hour to fix 😅",
   "I have spent at least a year creating an alternative history and I have still not finished it :D.",
   "I LOVE giant robots and military related stuffs, including vehicular and infantry. ",
-  "I prefer dark mode on everything because my eyes hurts when it is too bright. And also because it looks cooler.",
+  "I prefer dark mode on everything because my eyes hurts when it's too bright. And also because it looks cooler and to protect my eyes.",
   "I am weirdly attached to anime characters, including an original character I created."
 ];
 
@@ -360,12 +355,12 @@ export default function App() {
                 Quick Facts
               </h3>
               {[
-                { icon: "🎓", label: "Grade", value: "12th — graduating soon!" },
+                { icon: "🎓", label: "Grade", value: "12th — Just Arrived" },
                 { icon: "📍", label: "From", value: "Ho Chi Minh City, Vietnam" },
-                { icon: "🎯", label: "Currently aiming for", value: "IELTS 7.0+ & college" },
+                { icon: "🎯", label: "Currently aiming for", value: "IELTS 8.0+ & college" },
                 { icon: "🏫", label: "My high school", value: "Han Thuyen High School" },
                 { icon: "🎵", label: "Always listening to", value: "Whatever music fits the mood" },
-                { icon: "🎮", label: "Video games", value: "Tactical shooters, strategy games,..." },
+                { icon: "🎮", label: "Video games", value: "Tactical shooters, strategy games, gacha games,..." },
               ].map(({ icon, label, value }) => (
                 <div key={label} className="flex items-center gap-3 text-sm">
                   <span className="text-xl w-8 text-center shrink-0">{icon}</span>
