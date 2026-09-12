@@ -620,7 +620,7 @@ export default function App() {
 
           <div className="flex items-center justify-center gap-5 flex-wrap mb-14">
             {[
-              { icon: Mail, label: "Email", href: "mailto:lucasnguyen090809@example.com" },              
+              { icon: Mail, label: "Email", href: "mailto:lucasnguyen090809@gmail.com" },              
               { icon: Github, label: "GitHub", href: "https://github.com/Mute-dev09" },
               { icon: DiscordIcon, label: "Discord", href: "https://discord.com/users/mute0540" },
             ].map(({ icon: Icon, label, href }) => (
