@@ -9,10 +9,10 @@ export type HeroGameImage = {
 };
 
 export const HERO_GAME_IMAGES: HeroGameImage[] = [
-  { src: "/games/My_Gun.png", alt: "Deadline" },
+  { src: "/games/BRM5.png", alt: "Deadline" },
   { src: "/games/Me_IRL.jpg", alt: "it's za me" },
-  { src: "/games/AC6_2.png", alt: "AC6" },
+  { src: "/games/Shadowless.png", alt: "AC6" },
   { src: "/games/WutheringWAVES.png", alt: "Gacha games" },
-  { src: "/games/Yelena.png", alt: "AC6" },
+  { src: "/games/Yelena_2.png", alt: "AC6" },
 
 ];

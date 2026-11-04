@@ -1,16 +1,11 @@
-/**
- * Achievements & credentials shown in the gallery.
- * Add optional `image` paths (e.g. "/certificates/mos-word.jpg") when you have them.
- */
+
 export type Certificate = {
   id: string;
   title: string;
   issuer: string;
   date: string;
   description: string;
-  /** Path under /public — leave undefined until you add the file */
   image?: string;
-  /** Link to verify or view the credential online */
   credentialUrl?: string;
 };
 
