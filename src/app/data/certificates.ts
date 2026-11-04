@@ -21,7 +21,7 @@ export const CERTIFICATES: Certificate[] = [
     issuer: "Microsoft",
     date: "Grade 10",
     description: "Validated advanced Word skills for documents, formatting, and professional reports.",
-    image: "/certificates/experiment.jpg",
+    image: "/certificates/IMG_1249.jpg",
   },
   {
     id: "mos-excel",
@@ -29,7 +29,7 @@ export const CERTIFICATES: Certificate[] = [
     issuer: "Microsoft",
     date: "Grade 11",
     description: "Certified in spreadsheets, formulas, data organization, and Excel workflows.",
-    image: "/certificates/placeholder2.jpg",
+    image: "/certificates/IMG_1250.jpg",
   },
   {
     id: "hcmc-olympic",
@@ -37,7 +37,7 @@ export const CERTIFICATES: Certificate[] = [
     issuer: "Ho Chi Minh City Department of Education",
     date: "Grade 11",
     description: "Earned 3rd prize at the city-wide English Olympic for high school students.",
-    image: "/certificates/placeholder3.jpg",
+    image: "/certificates/IMG_1251.jpg",
   },
   
 ];
