@@ -89,13 +89,13 @@ const GOALS = [
 ];
 
 const FACTS = [
-  "I play lots of games and they usually cconsists of giant robots, military shooters and gacha games.",
+  "I play lots of games and they are usually gacha games, giant robots or tactical shooters.",
   "My favorite movies are Pacific Rim, Real Steel and Bayverse Transformers.",
   "My first line of code was a typo that took an hour to fix 😅",
   "I have spent at least a year creating an alternative history and I have still not finished it :D.",
   "I LOVE giant robots and military related stuffs, including vehicular and infantry. ",
-  "I prefer dark mode on everything because my eyes hurts when it's too bright. And also because it looks cooler and to protect my eyes.",
-  "I am weirdly attached to anime characters, including an original character I created."
+  "I prefer dark mode on everything beecause it is cool and it protects my eyes from pain.",
+  "I am weirdly attached to anime characters, including an original character I created and a character from Arknights."
 ];
 
 // ── HELPERS ───────────────────────────────────────────────────────────────────
