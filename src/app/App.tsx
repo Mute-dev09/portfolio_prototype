@@ -70,7 +70,7 @@ const TIMELINE = [
 
 const HOBBIES = [
   { icon: Palette, name: "Drawing", desc: "Still currently learning how to draw, usually military stuffs." },
-  { icon: Gamepad2, name: "Gaming", desc: "I love military games, especially milsims like Ready Or Not and strategy games." },
+  { icon: Gamepad2, name: "Gaming", desc: "I love military games, especially milsims like BRM5 and strategy games." },
   { icon: BookOpen, name: "Reading", desc: "Currently reading a lot of light novels." },
   { icon: Music, name: "Music", desc: "Always have a playlist running consisting of musics from pretty much every genre." },
   { icon: Zap, name: "Exercising", desc: "Helps me think better and stay energized." },
@@ -84,8 +84,8 @@ const GOALS = [
   { label: "Build my first personal portfolio website", status: "done" },
   { label: "Revitalize my momentum for studying code", status: "progress" },
   { label: "Achieve IELTS band 7.0 or above", status: "progress" },
-  { label: "Improve my drawing skills", status: "progress" },
-  { label: "Get into a great college", status: "upcoming" },
+  { label: "Improve my designing skills and critical thinking", status: "progress" },
+  { label: "Get into a great college to study more about computer science", status: "upcoming" },
 ];
 
 const FACTS = [
@@ -338,11 +338,15 @@ export default function App() {
                 A little about who I am
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I’m a grade 12th student in Ho Chi Minh city, currently preparing for college and a passion for English, 
-                video games, history and creativity. I love learning and experiencing, whether it is completing my first web project, 
-                learning how to draw, talking about history or just chasing a higher IELTS band. 
-                I also have an achievement, that is the 3rd prize reward for HCMC Olympic Competition for High School Students in English and 2 Microsoft Office Specialist certificates for Word and Excel. 
-                When i am not studying, you’ll usually see me gaming, talking with friends, researching about history and learning how to draw.
+                I’m a grade 12th student in Ho Chi Minh city, currently preparing for college and has a passion for English, 
+                video games, history and creative activities like worldbuilding and reverse engineering character designs.
+                <br />
+                I love learning and experiencing, whether it is completing my first web project, 
+                learning how to draw, talking about history or just chasing a higher IELTS band.
+                <br />
+                I have some notable achievements, that is the 3rd prize reward for HCMC Olympic Competition for High School Students in English and 2 Microsoft Office Specialist certificates for Word and Excel.
+                <br /> 
+                When I am not studying, you’ll usually see me gaming, talking with friends, researching about history, learning how to draw, researching about computer science and doing character designing exercises.
               </p>
             </div>
 
