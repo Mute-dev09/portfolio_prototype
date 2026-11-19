@@ -562,7 +562,7 @@ export default function App() {
       <section className="py-20 sm:py-24">
         <div className="max-w-[1100px] mx-auto px-6">
           <div className="max-w-[560px] mx-auto text-center">
-            <SectionLabel text="Bonus Round" />
+            <SectionLabel text="Bonus" />
             <h2
               className="text-3xl sm:text-4xl font-bold mb-4"
               style={{
